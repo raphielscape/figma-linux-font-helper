@@ -51,7 +51,14 @@ impl Config {
 
     let mut config = ConfigFile {
       port: "18412".to_owned(),
-      directories: vec![String::from("/usr/share/fonts")],
+      directories: vec![
+        String::from("/usr/share/fonts"),
+        String::from("/usr/local/share/fonts"),
+        String::from("/run/host/fonts"),
+        String::from("/run/host/user-fonts"),
+        String::from("$HOME/.local/share/fonts"),
+        String::from("$HOME/.fonts"),
+      ],
     };
 
     if path.exists() {
