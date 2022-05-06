@@ -2,3 +2,4 @@
 res/fonthelper
 fonthelper.tar.xz
 **/*.rs.bk
+Cargo.lock
